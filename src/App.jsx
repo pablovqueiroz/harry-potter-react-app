@@ -22,7 +22,7 @@ function App() {
           <Route path="favorites" element={<FavoritesPage />} />
           <Route path="manage-student" element={<ManageStudentPage />} />
           <Route path="*" element={<NotFoundPage />} />
-          <Route path="students-details" element={<StudentsDetailsPage />} />
+          <Route path="students/:studentId" element={<StudentsDetailsPage />} />
         </Routes>
       </main>
     </>
