@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { data, Link, useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import axios from "axios";
 
 function StudentsDetailsPage() {

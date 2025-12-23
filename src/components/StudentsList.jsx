@@ -3,7 +3,7 @@ import StudentCard from "./StudentCard";
 import { useEffect, useState } from "react";
 const itensPerPage = 8;
 
-function StudentsList() {
+function StudentsList({favorites = [], onToggleFavorite}) {
 const [students, setStudents] = useState([]);
     
     useEffect(() => {
@@ -26,9 +26,11 @@ const [students, setStudents] = useState([]);
 
   return (
     <>
+    
       <div className="students-list">
         {studentsToShow.map((student) => (
-          <StudentCard key={student.id} student={student} />
+          <StudentCard key={student.id} student={student} isFavorite={favorites.some(fav => fav.id === student.id)}
+            onToggleFavorite={onToggleFavorite}/>
         ))}
       </div>
 

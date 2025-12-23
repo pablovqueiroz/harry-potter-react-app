@@ -1,15 +1,17 @@
-import React from 'react'
-import Search from '../components/Search'
-import StudentsList from '../components/studentsList'
+import Search from '../components/Search';
+import StudentsList from '../components/StudentsList';
 
-function HomePage({students}) {
+function HomePage({ students, favorites, toggleFavorite }) {
   return (
     <div className='container'>
-      <Search/>
-      <StudentsList students={students}/>
-
+      <Search />
+      <StudentsList
+        students={students}
+        favorites={favorites}         
+        onToggleFavorite={toggleFavorite}
+      />
     </div>
-  )
+  );
 }
 
-export default HomePage
+export default HomePage;
