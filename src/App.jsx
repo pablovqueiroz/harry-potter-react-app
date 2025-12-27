@@ -9,9 +9,9 @@ import FavoritesPage from "./pages/FavoritesPage";
 import NotFoundPage from "./pages/NotfoundPage";
 import StudentsDetailsPage from "./pages/StudentsDetailsPage";
 import EditStudentPage from "./pages/EditStudentPage";
+import Footer from "./components/Footer"
 
 function App() {
-  const [count, setCount] = useState(0);
 
   /********Favorites*/
   const [favorites, setFavorites] = useState([]);
@@ -29,7 +29,6 @@ function App() {
     <>
       <Navbar />
       <main>
-        <Search />
         <Routes>
           <Route
             path="/"
@@ -57,7 +56,8 @@ function App() {
 
         </Routes>
       </main>
-    </>
+      <Footer/>
+          </>  
   );
 }
 
