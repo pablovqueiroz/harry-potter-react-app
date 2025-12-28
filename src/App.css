@@ -24,8 +24,8 @@ body {
   font-family: "MedievalSharp", cursive;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 30px;
-  padding: 40px;
+  gap: 20px;
+  padding: 0 20px 20px 20px;
 }
 
 .student-top {
@@ -63,7 +63,7 @@ body {
 }
 
 .student-card:hover {
-  transform: translateY(-10px) scale(1.02);
+  transform: translateY(-2px) scale(1.01);
   box-shadow: 0 15px 30px rgba(212, 175, 55, 0.2);
 }
 
@@ -808,11 +808,48 @@ footer a:hover {
   transform: translateY(-2px);
 }
 
-@media (min-width: 1400px) {
+/*SEARCH BAR*/
+.search-bar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.seach-bar-input {
+  width: 100%;
+  max-width: 800px;
+  padding: 12px 20px;
+  background-color: #f4ede0; 
+  border: 2px solid #372e29;
+  border-radius: 5px;
+  font-family: 'MedievalSharp', cursive;
+  font-size: 1.1rem;
+  color: #2a2118;
+  outline: none;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease;
+}
+
+.seach-bar-input:focus {
+  border-color: #d4af37;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.6);
+  background-color: #ffffff;
+  transform: scale(1.02);
+}
+
+.seach-bar-input::placeholder {
+  color: #a69a80;
+  font-style: italic;
+}
+
+
+/*RESPONSIVE*/
+/* @media (min-width: 1400px) {
   main {
     max-width: 1320px;
   }
-}
+} */
 
 @media (max-width: 991px) {
   .hp-navbar {
