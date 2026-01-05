@@ -35,7 +35,7 @@ function Footer() {
             className="footer-link"
           >
             <AiFillGithub className="git-icon" />
-            <p>Andres G Pérez</p>
+            <p>Andres Gonzalez</p>
           </Link>
         </article>
       </section>
