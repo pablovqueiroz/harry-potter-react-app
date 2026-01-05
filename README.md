@@ -11,10 +11,8 @@ _(Add deployed link here)_
 
 ## Description
 A React application that allows users to explore, create, edit, and manage Hogwarts students, featuring house filters, a favorites system, and themed pages inspired by the Wizarding World.
-<<<<<<< HEAD
+
 **This is an academic project developed for learning and practice purposes.**
-=======
->>>>>>> d17269bfb66dfc1b212c879d6ce95a9af8c6a075
 
 ---
 
@@ -122,8 +120,7 @@ A React application that allows users to explore, create, edit, and manage Hogwa
 - **Deploy Link:** (add it here)
 
 ### Slides
-<<<<<<< HEAD
+
 - **Slides Link:** (add it here)
-=======
+
 - **Slides Link:** (add it here)
->>>>>>> d17269bfb66dfc1b212c879d6ce95a9af8c6a075
