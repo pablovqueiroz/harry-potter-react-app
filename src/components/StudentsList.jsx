@@ -72,11 +72,11 @@ function StudentsList({ favorites = [], onToggleFavorite }) {
     
 
         <section className="items-pp">
-          <label htmlFor="items per page"> Items per page:</label>
+          <label htmlFor="items per page"> Cards per page:</label>
           <select
             name="items per page"
             id=""
-            onChange={(e) => setitemsPerPage(e.target.value)}
+            onChange={(e) => setitemsPerPage(Number(e.target.value))}
           >
             <option value="10">10</option>
             <option value="6">6</option>
